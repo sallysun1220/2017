@@ -473,7 +473,7 @@ section {
   padding-bottom: 1rem; }
 
 ul, ol {
-  width: 45%;
+  width: 85%;
   -webkit-padding-start: 5%;
   -webkit-padding-end: 5%; }
 
@@ -809,7 +809,7 @@ hr.slender {
   article h2, article h2 h3, article h3, article h3 h4, article h4, article h4 h5 {
     page-break-after: avoid; }
 
-  body header, body footer {
+  body footer {
     display: none; } }
 /* --- Icomoon icon fonts CSS --*/
 @font-face {

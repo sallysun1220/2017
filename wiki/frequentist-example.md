@@ -1,10 +1,24 @@
 ---
 title: Lab  1 - A frequentist example
-shorttitle: Lab  1 - A frequentist example
+shorttitle: frequentist-example
 notebook: frequentist-example.ipynb
 noline: 1
+summary: ""
+keywords: ['frequentist statistics', 'installing python', 'exponential distribution', 'poisson distribution', 'maximum likelihood', 'bootstrap']
 layout: wiki
 ---
+{% assign links = site.data.wikilinks %}
+
+## Contents
+{:.no_toc}
+*  
+{: toc}
+
+
+## Contents
+{:.no_toc}
+* 
+{: toc}
 
 ## Learning Aims
 
@@ -300,7 +314,7 @@ plt.ylabel("exponential pdf")
 
 
 
-![png](frequentist-example_files/frequentist-example_9_1.png)
+![png](frequentist-example_files/frequentist-example_11_1.png)
 
 
 Note: **some of the code, and ALL of the visual style for the distribution plots below was shamelessly stolen from https://gist.github.com/mattions/6113437/ **.
@@ -331,7 +345,7 @@ plt.title("Probability density function of an Exponential random variable;\
 
 
 
-![png](frequentist-example_files/frequentist-example_11_1.png)
+![png](frequentist-example_files/frequentist-example_13_1.png)
 
 
 ### How would we draw from this distribution?
@@ -351,7 +365,7 @@ plt.title("exponential pdf and no. of samples(normalized)");
 
 
 
-![png](frequentist-example_files/frequentist-example_13_0.png)
+![png](frequentist-example_files/frequentist-example_15_0.png)
 
 
 In `scipy.stats`, you can alternatively create a frozen object, which holds values of things like the scale
@@ -369,7 +383,7 @@ plt.title("exponential pdf, cdf and samples(normalized)");
 
 
 
-![png](frequentist-example_files/frequentist-example_15_0.png)
+![png](frequentist-example_files/frequentist-example_17_0.png)
 
 
 ## The Poisson distribution
@@ -404,7 +418,7 @@ plt.ylabel("Normed Counts");
 
 
 
-![png](frequentist-example_files/frequentist-example_17_1.png)
+![png](frequentist-example_files/frequentist-example_19_1.png)
 
 
 ### Understanding our data using a  histogram-plotted distribution
@@ -428,7 +442,7 @@ timediffs.hist(bins=20, normed=True);
 
 
 
-![png](frequentist-example_files/frequentist-example_19_1.png)
+![png](frequentist-example_files/frequentist-example_21_1.png)
 
 
 And do the same for the poisson
@@ -494,7 +508,7 @@ poiskcount.hist(weights=weights)
 
 
 
-![png](frequentist-example_files/frequentist-example_23_1.png)
+![png](frequentist-example_files/frequentist-example_25_1.png)
 
 
 
@@ -587,7 +601,7 @@ plt.title("Normalized data and model for estimated $\hat{\lambda}$");
 
 
 
-![png](frequentist-example_files/frequentist-example_28_1.png)
+![png](frequentist-example_files/frequentist-example_30_1.png)
 
 
 What did we just do? We made a 'point estimate' of the scale or rate parameter as a compression of our data. 
@@ -669,7 +683,7 @@ plt.title("Normalized data and model for estimated $\hat{\mu}$");
 
 
 
-![png](frequentist-example_files/frequentist-example_35_1.png)
+![png](frequentist-example_files/frequentist-example_37_1.png)
 
 
 ## FREQUENTIST STATISTICS 
@@ -736,7 +750,7 @@ plt.legend()
 
 
 
-![png](frequentist-example_files/frequentist-example_40_1.png)
+![png](frequentist-example_files/frequentist-example_42_1.png)
 
 
 The above procedure os resampling directly into a 2d array might seem a bit strange, so we repeat the same process split up logically into M replications of size N samples below and ,ake the same plot.
@@ -779,7 +793,7 @@ plt.legend()
 
 
 
-![png](frequentist-example_files/frequentist-example_43_1.png)
+![png](frequentist-example_files/frequentist-example_45_1.png)
 
 
 ### Parametric 
@@ -808,7 +822,7 @@ plt.axvline(timediffs.mean(), 0, 1, color='r', label='Our Sample')
 
 
 
-![png](frequentist-example_files/frequentist-example_45_1.png)
+![png](frequentist-example_files/frequentist-example_47_1.png)
 
 
 Your turn to do the same for the poisson distribution, both the non-parametric and the parametric bootstrap.
@@ -836,7 +850,7 @@ plt.legend()
 
 
 
-![png](frequentist-example_files/frequentist-example_47_1.png)
+![png](frequentist-example_files/frequentist-example_49_1.png)
 
 
 
@@ -862,7 +876,7 @@ plt.axvline(poiskcount.mean(), 0, 1, color='r', label='Our Sample')
 
 
 
-![png](frequentist-example_files/frequentist-example_48_1.png)
+![png](frequentist-example_files/frequentist-example_50_1.png)
 
 
 
